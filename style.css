@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+  
+   
+
+}
+
+
+.game{
+    width: 500px;
+    height: 200px;
+    border:1px solid black;
+    position : absolute;
+
+ 
+   
+   
+}
+
+.perso{
+    height: 50px;
+    width: 20px;
+    background-color: red;
+    position: relative;
+    top: 150px;
+
+
+    
+}
+.contai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.animation{
+    animation: saut 0.5s  linear;
+}
+
+.obstacle{
+    height: 20px;
+    background-color: black;
+    width: 20px;
+    position: relative ;
+    top :130px;
+    left:480px ;
+    animation: obs 2s infinite linear ;
+
+  
+
+}
+
+
+@keyframes obs{
+    0%{left: 480px;}
+    100%{left: -40px;}
+}
+
+@keyframes saut  {
+    0%{top: 150px;}
+    100%{top: 110px;}
+    
+}
