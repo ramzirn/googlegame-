@@ -1,5 +1,6 @@
 let char= document.getElementById('perso')
 let obs= document.getElementById('obstacle')
+let replay = document.getElementById('replay')
 
 function jump(){
     if (char.classList!= 'animation'){
